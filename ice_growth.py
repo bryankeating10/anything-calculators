@@ -1,7 +1,7 @@
 from math import sqrt
 
 # WATER CONSTANTS
-rho = 999.9						# Density (kg/m^3)
+rho = 999.87					# Density (kg/m^3)
 k = 2.23						# Thermal coefficient (W/m*K)
 L_f = 334e3						# Latent heat of fussion (J/kg)
 
@@ -25,3 +25,7 @@ def m2in(meters):
 result = new_ice(xi,ti,tf,-6.67)
 print(result)
 print(f'Inches: {m2in(result)}')
+
+# INTEGRATION OF TEMPERATURE PROFILE
+time_hours = list(range(25))
+temp_hours = []
